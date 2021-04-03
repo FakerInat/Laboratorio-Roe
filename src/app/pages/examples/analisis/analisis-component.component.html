@@ -144,9 +144,9 @@
                 <ng-template pTemplate="header">
                     <tr>
 
-                        <th style="width: 500px;" pSortableColumn="name">Nombre <p-sortIcon field="name"></p-sortIcon>
+                        <th style="width: 300px;" pSortableColumn="name">Nombre <p-sortIcon field="name"></p-sortIcon>
                         </th>
-                        <th style="width: 500px;" pSortableColumn="category">Especialidad <p-sortIcon field="category">
+                        <th style="width: 300px;" pSortableColumn="category">Especialidad <p-sortIcon field="category">
                             </p-sortIcon>
                         </th>
                         <th pSortableColumn="price">Precio <p-sortIcon field="price"></p-sortIcon>
@@ -161,8 +161,8 @@
                 <ng-template pTemplate="body" let-product>
                     <tr>
 
-                        <td style="width: 500px;">{{product.name}}</td>
-                        <td style="width: 500px;">{{product.category}}</td>
+                        <td style="width: 300px;">{{product.name}}</td>
+                        <td style="width: 300px;">{{product.category}}</td>
                         <td>{{product.price | currency:'USD'}}</td>
 
 
