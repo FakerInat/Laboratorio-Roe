@@ -30,6 +30,17 @@ interface City {
 :host ::ng-deep .pi-times:before {
     color: white;
 }
+
+
+
+:host ::ng-deep .p-toast .p-toast-message .p-toast-message-content .pi-times:before{
+    padding: 1rem;
+    background-color: #d4edda;
+    border: solid #8A427A;
+    border-width: 0 0 0 6px;
+    color: black;
+    border-width: 0;
+}
 `],
   styleUrls: ['./analisis-component.component.scss']
 })
