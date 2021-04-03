@@ -1,0 +1,27 @@
+.product-item {
+    .product-item-content {
+        border: 1px solid var(--surface-d);
+        border-radius: 3px;
+        margin: .3rem;
+        padding: 2rem 0;
+        display: inline;
+        padding-left: -40px;
+    }
+
+    .product-image {
+        width: 50%;
+        height: 300px;
+        text-align: left;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23)
+    }
+}
+p,h6,h4 {
+    color: black
+}
+
+.containerCarrusal{
+    border: 1px solid var(--surface-d);
+    border-radius: 10px;
+    background: rgb(255, 250, 250);
+  
+}
