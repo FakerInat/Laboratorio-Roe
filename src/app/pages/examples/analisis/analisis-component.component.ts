@@ -19,6 +19,17 @@ interface City {
       margin: 0 auto 2rem auto;
       display: block;
   }
+  :host ::ng-deep .p-dialog .p-dialog-header {
+    border-bottom: 1px solid #e9ecef;
+    background: #003366;
+    color: white;
+    padding: 1rem;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+}
+:host ::ng-deep .pi-times:before {
+    color: white;
+}
 `],
   styleUrls: ['./analisis-component.component.scss']
 })

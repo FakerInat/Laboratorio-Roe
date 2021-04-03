@@ -34,12 +34,12 @@
                 </li>
                 <li class="nav-item p-0">
 
-                    <a class="nav-link" href="javascript:void(0)" >
+                    <a class="nav-link" href="javascript:void(0)">
                         <i class="tim-icons icon-paper"> </i> Resultados
                     </a>
                 </li>
                 <li class="nav-item p-0">
-                    <a class="nav-link  " href="javascript:void(0)" >
+                    <a class="nav-link  " href="javascript:void(0)">
                         <i class="tim-icons icon-paper"> </i> Analisis
                     </a>
                 </li>
@@ -64,7 +64,7 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link btn btn-default " href="javascript:void(0)" >
+                    <a class="nav-link btn btn-default " href="javascript:void(0)">
                         <i class="tim-icons icon-tap-02"> </i> Agenda tu cita
                     </a>
                 </li>
@@ -72,8 +72,7 @@
 
 
                 <li class="nav-item p-0 ">
-                    <a class="nav-link btn btn-default d-none d-lg-block" href="javascript:void(0)"
-                        >
+                    <a class="nav-link btn btn-default d-none d-lg-block" href="javascript:void(0)">
 
                         <i class="tim-icons icon-sound-wave"> </i> Vacunas
                     </a>
@@ -100,7 +99,7 @@
 <div class="wrapper" style="background: #003366;height: 100px;width: 100%;">
 
 </div>
-<div class="wrapper" >
+<div class="wrapper">
 
     <div style="padding: 8rem;margin-top: -100px;">
 
@@ -110,7 +109,7 @@
         padding: 2rem;
         box-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%), 0 1px 3px 0 rgb(0 0 0 / 12%);
         border-radius: 4px;
-        margin-bottom: 2rem;" >
+        margin-bottom: 2rem;">
 
             <p-fieldset legend="Análisis">
                 <div class="p-grid p-fluid">
@@ -118,8 +117,8 @@
                     <div class="p-col-12 p-md-6">
                         <span>Buscar por:</span>
                         <div class="p-inputgroup">
-                            <p-dropdown [options]="cities" [(ngModel)]="selectedCity1" placeholder="Seleccionar Análisis" optionLabel="name"
-                            [showClear]="true"></p-dropdown>
+                            <p-dropdown [options]="cities" [(ngModel)]="selectedCity1"
+                                placeholder="Seleccionar Análisis" optionLabel="name" [showClear]="true"></p-dropdown>
                         </div>
                     </div>
 
@@ -169,8 +168,8 @@
                         <td>
                             <button pButton pRipple icon="pi pi-eye" class="p-button-rounded p-button-success p-mr-2"
                                 (click)="editProduct(product)"></button>
-                            &nbsp;<button pButton pRipple icon="pi pi-shopping-cart" class="p-button-rounded p-button-warning"
-                                (click)="deleteProduct(product)"></button>
+                            &nbsp;<button pButton pRipple icon="pi pi-shopping-cart"
+                                class="p-button-rounded p-button-warning" (click)="deleteProduct(product)"></button>
                         </td>
                     </tr>
                 </ng-template>
@@ -183,7 +182,7 @@
         </div>
 
         <p-dialog [(visible)]="productDialog" [style]="{width: '450px'}" header="Product Details" [modal]="true"
-            styleClass="p-fluid">
+            styleClass="p-fluid p-dialog-header2">
             <ng-template pTemplate="content">
                 <div class="p-field">
                     <label for="name">Name</label>
