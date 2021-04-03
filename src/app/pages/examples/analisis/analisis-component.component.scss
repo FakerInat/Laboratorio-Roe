@@ -1,6 +1,10 @@
 
 :host ::ng-deep .p-dropdown {
-    width: 25rem;
+    width: 18rem;
+  }
+
+  :host ::ng-deep  .p-datatable .p-datatable-tbody > tr {
+    border-bottom: 1pt solid #d5d0d0;
   }
 .product-item {
     .product-item-content {

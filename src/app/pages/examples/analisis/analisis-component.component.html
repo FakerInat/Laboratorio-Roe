@@ -100,40 +100,40 @@
 <div class="wrapper" style="background: #003366;height: 100px;width: 100%;">
 
 </div>
+
+
+<br>
 <div class="wrapper">
+    <div class="container" >
+        <p-fieldset legend="Análisis">
+            <div class="p-grid p-fluid">
 
-    <div style="padding: 8rem;margin-top: -100px;">
+                <div class="p-col-12 p-md-6">
+                    <span>Buscar por:</span>
+                    <div class="p-inputgroup">
+                        <p-dropdown [options]="cities" [(ngModel)]="selectedCity1"
+                            placeholder="Seleccionar Análisis" optionLabel="name" [showClear]="true"></p-dropdown>
+                    </div>
+                </div>
 
-      
+                <div class="p-col-12 p-md-6">
+                    <span>Buscar por Nombre</span>
+                    <div class="p-inputgroup">
+                        <input type="text" pInputText placeholder="Ingrese un nombre">
+                        <button type="button" pButton pRipple icon="pi pi-search"
+                            styleClass="p-button-warn"></button>
+                    </div>
+                </div>
 
+            </div>
+        </p-fieldset>
+        <br>
         <div style="background: var(--surface-e);
         padding: 2rem;
-        box-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%), 0 1px 3px 0 rgb(0 0 0 / 12%);
+        box-shadow: 0 2px 1px -1px rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 1px 3px 0 rgba(0,0,0,.12);
         border-radius: 4px;
-        margin-bottom: 2rem;">
+        margin-bottom: 2rem;" >
 
-            <p-fieldset legend="Análisis">
-                <div class="p-grid p-fluid">
-
-                    <div class="p-col-12 p-md-6">
-                        <span>Buscar por:</span>
-                        <div class="p-inputgroup">
-                            <p-dropdown [options]="cities" [(ngModel)]="selectedCity1"
-                                placeholder="Seleccionar Análisis" optionLabel="name" [showClear]="true"></p-dropdown>
-                        </div>
-                    </div>
-
-                    <div class="p-col-12 p-md-6">
-                        <span>Buscar por Nombre</span>
-                        <div class="p-inputgroup">
-                            <input type="text" pInputText placeholder="Ingrese un nombre">
-                            <button type="button" pButton pRipple icon="pi pi-search"
-                                styleClass="p-button-warn"></button>
-                        </div>
-                    </div>
-
-                </div>
-            </p-fieldset>
             <br>
 
 
@@ -180,8 +180,8 @@
                     </div>
                 </ng-template>
             </p-table>
-        </div>
-
+        </div>    
+    </div>
         <p-dialog [(visible)]="productDialog" [style]="{width: '450px'}" header="Product Details" [modal]="true"
             styleClass="p-fluid p-dialog-header2">
             <ng-template pTemplate="content">
@@ -240,7 +240,7 @@
         </p-dialog>
 
         <p-confirmDialog [style]="{width: '450px'}"></p-confirmDialog>
-    </div>
+  
     <footer class="footer">
         <div class="container">
             <div class="row">
@@ -377,86 +377,14 @@
 </div>
 
 <style>
-    .cards-list {
-        z-index: 0;
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
+    .cartita{
+        background: var(--surface-e);
+padding: 2rem;
+box-shadow: 0 2px 1px -1px rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 1px 3px 0 rgba(0,0,0,.12);
+border-radius: 4px;
+margin-bottom: 2rem;
     }
-
-    .card {
-        margin: 30px auto;
-        width: 300px;
-        height: 300px;
-        border-radius: 40px;
-        box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25), -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
-        cursor: pointer;
-        transition: 0.4s;
-    }
-
-    .card .card_image {
-        width: inherit;
-        height: inherit;
-        border-radius: 40px;
-    }
-
-    .card .card_image img {
-        width: inherit;
-        height: inherit;
-        border-radius: 40px;
-        object-fit: cover;
-    }
-
-    .card .card_title {
-        text-align: center;
-        border-radius: 0px 0px 40px 40px;
-        font-family: sans-serif;
-        font-weight: bold;
-        font-size: 25px;
-        margin-top: -40px;
-        height: 40px;
-        background: rgba(0, 0, 0, 0.164);
-    }
-
-    .card:hover {
-        transform: scale(0.9, 0.9);
-        box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
-            -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
-    }
-
-    .title-white {
-        color: white;
-
-    }
-
-    .title-black {
-        color: black;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
-
-    @media all and (max-width: 500px) {
-        .card-list {
-            /* On small screens, we are no longer using row direction but column */
-            flex-direction: column;
-        }
-    }
-
-
-    /*
-  .card {
-    margin: 30px auto;
-    width: 300px;
-    height: 300px;
-    border-radius: 40px;
-    background-image: url('https://i.redd.it/b3esnz5ra34y.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-repeat: no-repeat;
-  box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
-    transition: 0.4s;
-  }
-  */
 </style>
+
+
 
